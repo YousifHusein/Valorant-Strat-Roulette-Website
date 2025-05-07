@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Strat Roulette</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tooltipster@4.2.8/dist/css/tooltipster.bundle.min.css" />
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="valorant-Logo.png" alt="Valorant Logo" id="logo">
+        </a>
+        <h1 id="site-title">Valorant Strat Roulette</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="strat-list.html">Strategy List</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Click the button to get a random strategy!</h2>
+
+        <button id="generate-strat">Generate Strat</button>
+
+        <div id="strat-display">Your strategy will appear here!</div>
+
+        <div class="control-group">
+            <label for="difficulty-slider">Select Difficulty (1 - Easy, 5 - Hard):</label>
+            <input type="range" id="difficulty-slider" min="1" max="5" value="3" step="1">
+            <p>Difficulty Level: <span id="difficulty-value">3</span></p>
+        </div>
+
+        <div class="color-picker">
+            <label for="color-picker">Pick a color for the website:</label>
+            <input type="color" id="color-picker" name="color-picker" value="#ff4654">
+        </div>
+    </main>
+
+    <div id="strategy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Strategy Details</h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Valorant Strat Roulette | <a href="https://validator.w3.org/">HTML Validator</a></p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tooltipster@4.2.8/dist/js/tooltipster.bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>

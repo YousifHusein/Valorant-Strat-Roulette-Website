@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Valorant Strat Roulette</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.6/css/tooltipster.bundle.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./valorant-Logo.png" alt="Valorant Logo" id="logo">
+        </a>
+        <h1 id="site-title">How It Works</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="strat-list.html">Strategy List</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>How does this work?</h2>
+        <p>Click the "Generate Strat" button, and a random strategy will be chosen from our database. Strategies are categorized into <strong>Tactical</strong>, <strong>Fun</strong>, and <strong>Challenge</strong> types.</p>
+
+        <div class="steps-container">
+            <h3>How to Use:</h3>
+            <div class="step">
+                <div class="step-description">
+                    <h4>1. Select Your Difficulty</h4>
+                    <p>Use the difficulty slider to choose how hard you want your strategy to be (from 1 - Easy to 5 - Hard).</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-description">
+                    <h4>2. Generate a Random Strat</h4>
+                    <p>Click the "Generate Strat" button to get a random strategy from the selected difficulty level.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-description">
+                    <h4>3. View the Strategy Details</h4>
+                    <p>Click on the generated strategy to open the modal and view the strategy's detailed information, including tips and weapon recommendations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="strat-accordion" class="accordion-container">
+            <h3>Tactical Strategies</h3>
+            <div>
+                <p>Strategies designed for serious competitive play, focusing on winning matches with coordination and precision.</p>
+                <ul>
+                    <li>Knives only! No guns.</li>
+                    <li>No abilities, only gunplay.</li>
+                </ul>
+            </div>
+            <h3>Fun Strategies</h3>
+            <div>
+                <p>Strategies focused on having fun with friends, doing something unconventional but still enjoyable.</p>
+                <ul>
+                    <li>Everyone buys a Sheriff and walks everywhere.</li>
+                    <li>One player leads, others follow no questions asked.</li>
+                </ul>
+            </div>
+            <h3>Challenge Strategies</h3>
+            <div>
+                <p>Strategies meant to challenge your team and push you to think creatively or perform under pressure.</p>
+                <ul>
+                    <li>Everyone rushes mid, no stopping.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Valorant Strat Roulette | <a href="https://validator.w3.org/">HTML Validator</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.6/js/tooltipster.bundle.min.js"></script>
+
+    <script defer src="scripts.js"></script>
+</body>
+</html>
